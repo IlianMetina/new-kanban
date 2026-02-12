@@ -6,6 +6,9 @@ body{
     height: 100vh;
     background: linear-gradient(120deg, #E9EEF2, #C8D3DD, #FFFFFF);
     overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header{
@@ -22,7 +25,8 @@ header{
 .header-title{
     
     color: black;
-    font-size: 2em;
+    font-size: 3em;
+    margin-left: 1em;
 }
 
 /* ------------------ MAIN -------------------- */
