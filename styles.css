@@ -5,6 +5,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(120deg, #E9EEF2, #C8D3DD, #FFFFFF);
+    overflow-x: hidden;
 }
 
 header{
@@ -37,7 +38,7 @@ main{
 
 .tab-container{
 
-    width: 90%;
+    width: 95%;
     height: 100%;
     border-radius: 10px;
     display: grid;
