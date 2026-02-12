@@ -4,6 +4,7 @@ body{
     padding: 0;
     width: 100vw;
     height: 100vh;
+    background: linear-gradient(120deg, #E9EEF2, #C8D3DD, #FFFFFF);
 }
 
 header{
@@ -12,16 +13,14 @@ header{
     width: 100%;
     border-bottom: 1px solid #ccc;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #00FFFF;
 }
 
 
 /* ------------------ HEADER -------------------- */
 .header-title{
     
-    color: #7B68EE;
+    color: black;
     font-size: 2em;
 }
 
@@ -32,8 +31,6 @@ main{
     height: 85%;
     width: 100%;
     border: 1px solid red;
-    background: #2A7B9B;
-    background-color: #00FFFF;
     display: grid;
     justify-items: center;
 }
@@ -42,7 +39,6 @@ main{
 
     width: 90%;
     height: 100%;
-    background-color: #ccc;
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -69,6 +65,5 @@ main{
 
 .task:hover{
 
-    background-color: bisque;
     cursor: pointer;
 }
