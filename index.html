@@ -8,10 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
 </head>
 <body>
     <header>
         <h1 class="header-title">Kanban View</h1>
+        <div class="functionalities">
+            <select name="" id="">
+                <option value="" disabled selected hidden>Select Status</option>
+            </select>
+            <select name="" id="">
+                <option value="" disabled selected hidden>Select Work Center</option>
+            </select>
+            <input type="date" id="date">
+            <button class="add-task-btn">
+                <span class="material-symbols-outlined">
+                add
+                </span>
+                Add New
+            </button>
+        </div>
     </header>
     <main class="main-container">
         <div class="tab-container">
@@ -19,9 +36,35 @@
                 <div class="column-title">
                     <h1>To Do</h1>
                 </div>
-                <div class="first-column-content">
-                    <div class="task">
-                        Récupérer
+                <div class="task-column-wrapper">
+                    <div class="first-column-content">
+                        <div class="task-wrapper">
+                            <div class="task-reference">
+                                <div>
+                                    WH/MO/0025
+                                </div>
+                                <div class="edit-icons">
+                                    <button><i class="material-icons" style="font-size:20px; color: blue;">edit</i></button>
+                                    <button><i class="material-icons" style="font-size:20px; color: blue;">delete</i></button>
+                                </div>
+                            </div>
+                            <div class="flex-task-infos">
+                                <p>Work Centers : </p>
+                                <h3>R1WC1</h3>
+                            </div>
+                            <div class="flex-task-infos">
+                                <p>Responsible : </p>
+                                <h3 class="responsible-name">Samuels</h3>
+                            </div>
+                            <div class="flex-task-infos">
+                                <p>Due Date : </p>
+                                <h3>30/04/2023</h3>
+                            </div>
+                            <div class="flex-task-infos">
+                                <p>Produced : </p>
+                                <h3>0/10</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -29,23 +72,82 @@
                 <div class="column-title">
                     <h1>Doing</h1>
                 </div>
-                <div class="first-column-content">
-                    <div class="task">
-                        Récupérer
+                <div class="task-column-wrapper">
+                    <div class="first-column-content">
+                        <div class="task-wrapper">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="third-grid-column">
                 <div class="column-title">
-                    <h1>Done</h1>
+                    <h1>Pending</h1>
                 </div>
-                <div class="first-column-content">
-                    <div class="task">
-                        Récupérer
+                <div class="task-column-wrapper">
+                    <div class="first-column-content">
+                        <div class="task-wrapper">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth-grid-column">
+                <div class="column-title">
+                    <h1>In Review</h1>
+                </div>
+                <div class="task-column-wrapper">
+                    <div class="first-column-content">
+                        <div class="task-wrapper">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth-grid-column">
+                <div class="column-title">
+                    <h1>Completed</h1>
+                </div>
+                <div class="task-column-wrapper">
+                    <div class="first-column-content">
+                        <div class="task-wrapper">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <template id="task-template">
+        <div class="task-wrapper">
+            
+            <div class="task-reference">
+                <div>
+                    WH/MO/0025
+                </div>
+                <div class="edit-icons">
+                    <button><i class="material-icons" style="font-size:20px; color: blue;">edit</i></button>
+                    <button><i class="material-icons" style="font-size:20px; color: blue;">delete</i></button>
+                </div>
+            </div>
+            <div class="flex-task-infos">
+                <p>Work Centers : </p>
+                <h3>R1WC1</h3>
+            </div>
+            <div class="flex-task-infos">
+                <p>Responsible : </p>
+                <h3 class="responsible-name">Samuels</h3>
+            </div>
+            <div class="flex-task-infos">
+                <p>Due Date : </p>
+                <h3>30/04/2023</h3>
+            </div>
+            <div class="flex-task-infos">
+                <p>Produced : </p>
+                <h3>0/10</h3>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
 </body>
 </html>

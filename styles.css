@@ -15,11 +15,17 @@ header{
 
     height: 15%;
     width: 100%;
-    border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+button{
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
 
 /* ------------------ HEADER -------------------- */
 .header-title{
@@ -29,13 +35,20 @@ header{
     margin-left: 1em;
 }
 
+.functionalities{
+
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    margin-right: 1em;
+}
+
 /* ------------------ MAIN -------------------- */
 
 main{
 
     height: 85%;
     width: 100%;
-    border: 1px solid red;
     display: grid;
     justify-items: center;
 }
@@ -46,29 +59,112 @@ main{
     height: 100%;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
 }
 
 /* ------------------ GRID COLUMNS -------------------- */
 
-.first-grid-column, .second-grid-column, .third-grid-column{
+.first-grid-column, .second-grid-column, .third-grid-column, .fourth-grid-column, .fifth-grid-column{
 
-    border: 3px solid yellow;
+    background: linear-gradient(to bottom, #274ba0 0%, #1e40af 100%);
+    border-radius: 15px;
 }
 
 .column-title{
 
     text-align: center;
-    border-bottom: 1px solid white;
+    color: white;
 }
 
-.task{
+.task-column-wrapper{
 
-    border: 1px solid rgb(255, 0, 0);
-    height: auto;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.task-wrapper{
+
+    border: 1px solid blue;
+    border-radius: 15px;
+    width: 90%;
+    margin: 10px auto 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .task:hover{
 
     cursor: pointer;
+}
+
+.task-reference{
+
+    width: 100%;
+    text-align: center;
+    background-color: #dae7f0;
+    border-radius: 25px;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-task-infos{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dbeafe;
+}
+
+.responsible-name{
+
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.edit-icons{
+
+    display: flex;
+    gap: 0.5em;
+}
+
+.edit-icons i{
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.add-task-btn{
+
+    display: flex;
+    padding: 7px 20px 7px 20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #3b82f6 0%, #1e40af 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    gap: 1em;
+}
+
+.add-task-btn span{
+
+    background-color: rgb(144, 144, 255);
+    border-radius: 10px;
+}
+
+select, #date{
+
+    padding: 5px 40px 5px 20px;
+    border-radius: 20px;
+    border: grey;
+    background-color: white;
+    color: grey;
 }
