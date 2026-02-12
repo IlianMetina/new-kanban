@@ -1,0 +1,74 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+
+    height: 15%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FFFF;
+}
+
+
+/* ------------------ HEADER -------------------- */
+.header-title{
+    
+    color: #7B68EE;
+    font-size: 2em;
+}
+
+/* ------------------ MAIN -------------------- */
+
+main{
+
+    height: 85%;
+    width: 100%;
+    border: 1px solid red;
+    background: #2A7B9B;
+    background-color: #00FFFF;
+    display: grid;
+    justify-items: center;
+}
+
+.tab-container{
+
+    width: 90%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* ------------------ GRID COLUMNS -------------------- */
+
+.first-grid-column, .second-grid-column, .third-grid-column{
+
+    border: 3px solid yellow;
+}
+
+.column-title{
+
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.task{
+
+    border: 1px solid rgb(255, 0, 0);
+    height: auto;
+}
+
+.task:hover{
+
+    background-color: bisque;
+    cursor: pointer;
+}
